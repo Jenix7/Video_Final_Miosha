@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Redirect</title>
+    <script>
+        // Enlace al video de YouTube
+        var videoURL = "https://www.youtube.com/watch?v=tu_video_id"; // Reemplaza 'tu_video_id' con el ID del video que quieres redirigir
+
+        // Redirigir automáticamente
+        window.onload = function() {
+            window.location.href = videoURL;
+        };
+    </script>
+</head>
+<body>
+    <p>Si no eres redirigido automáticamente, <a href="#" id="video-link">haz clic aquí</a>.</p>
+    <script>
+        // Enlace de respaldo en caso de que JavaScript esté deshabilitado
+        document.getElementById('video-link').href = videoURL;
+    </script>
+</body>
+</html>
